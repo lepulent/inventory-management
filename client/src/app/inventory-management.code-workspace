@@ -1,0 +1,13 @@
+{
+  "folders": [
+	{
+		"name": "inventory-management",
+		"path": "../.."
+	},
+	{
+		"name": "server",
+		"path": "../../../server"
+	}
+],
+  "settings": {}
+}
