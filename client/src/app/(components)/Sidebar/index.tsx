@@ -3,7 +3,6 @@
 import { useAppDispatch, useAppSelector } from "@/app/redux";
 import { setIsSidebarCollapsed } from "@/state";
 import {
-  DollarSign,
   Archive,
   CircleDollarSign,
   Clipboard,
@@ -13,7 +12,7 @@ import {
   SlidersHorizontal,
   User,
 } from "lucide-react";
-//import Image from "next/image";
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import React from "react";
@@ -82,14 +81,13 @@ const Sidebar = () => {
           isSidebarCollapsed ? "px-5" : "px-8"
         }`}
       >
-        Logo
-        {/*<Image
+        <Image
           src="https://s3-inventorymanagement.s3.us-east-2.amazonaws.com/logo.png"
           alt="edstock-logo"
           width={27}
           height={27}
           className="rounded w-8"
-        />*/}
+        />
         <h1
           className={`${
             isSidebarCollapsed ? "hidden" : "block"
@@ -97,6 +95,7 @@ const Sidebar = () => {
         >
           Cayambe
         </h1>
+
         <button
           className="md:hidden px-3 py-3 bg-gray-100 rounded-full hover:bg-blue-100"
           onClick={toggleSidebar}
@@ -106,14 +105,7 @@ const Sidebar = () => {
       </div>
 
       {/* LINKS */}
-
       <div className="flex-grow mt-8">
-        <SidebarLink
-          href="/pos"
-          icon={DollarSign}
-          label="Point of Sales"
-          isCollapsed={isSidebarCollapsed}
-        />
         <SidebarLink
           href="/dashboard"
           icon={Layout}
@@ -154,7 +146,7 @@ const Sidebar = () => {
 
       {/* FOOTER */}
       <div className={`${isSidebarCollapsed ? "hidden" : "block"} mb-10`}>
-        <p className="text-center text-xs text-gray-500">&copy; 2024 Edstock</p>
+        <p className="text-center text-xs text-gray-500">&copy; 2024 Get Real by Richie</p>
       </div>
     </div>
   );
