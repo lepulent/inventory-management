@@ -83,7 +83,7 @@ const Products = () => {
                 <Image
                   src={`https://s3-inventorymanagement-getreal.s3.us-east-1.amazonaws.com/assets/product${
                     Math.floor(Math.random() * 3) + 1
-                  }.png`}
+                  }.webp`}
                   alt={product.name}
                   width={150}
                   height={150}
