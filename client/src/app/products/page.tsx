@@ -82,7 +82,7 @@ const Products = () => {
               <div className="flex flex-col items-center">
                 <Image
                   src={`https://s3-inventorymanagement-getreal.s3.us-east-1.amazonaws.com/assets/hat${
-                    Math.floor(Math.random() * 3) + 1
+                    Math.floor(Math.random() * 6) + 1
                   }.webp`}
                   alt={product.name}
                   width={150}
